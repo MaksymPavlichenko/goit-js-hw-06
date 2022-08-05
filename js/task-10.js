@@ -16,7 +16,6 @@ function inputChange() {
 }
 
 function createBoxes (amount) {
-  elCollectionRef.innerHTML = '';
   amount = inputRef.value;
   
   if (amount < 1 || amount > 100){
@@ -35,7 +34,7 @@ function createBoxes (amount) {
   const boxes = elements.join('');
 
   elCollectionRef.insertAdjacentHTML('beforeend', boxes);
-
+   
   inputRef.value = "";
 }
 
