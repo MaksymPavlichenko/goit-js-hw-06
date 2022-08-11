@@ -6,7 +6,7 @@ console.log("Number of categories:", numberOfCategories);
 
 [...childrenOfCategoriesList].forEach(elem => {
     const categoryName = elem.firstElementChild.textContent;
-    const numberOfItemsInCategory = elem.lastElementChild.length;
+    const numberOfItemsInCategory = elem.lastElementChild.children.length;
 
     console.log("Category:", categoryName);
     console.log("Elements:", numberOfItemsInCategory);
